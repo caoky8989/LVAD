@@ -25,6 +25,6 @@ module load singularity/
 ## run the solver script
 echo "job started"
 
-mpirun -n $SLURM_NTASKS singularity exec --bind /scratch/summit /projects/aksa2832/svsolver_container/simvascular.sif /opt/svSolver/BuildWithMake/Bin/svsolver-openmpi.exe solver.inp
+mpirun -n $SLURM_NTASKS singularity exec --bind /scratch/summit /home/keca4089/svsolver_container/simvascular.sif /opt/svSolver/BuildWithMake/Bin/svsolver-openmpi.exe solver.inp
 
 echo "job ended"
